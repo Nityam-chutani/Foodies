@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand , sans-serif';
+    ;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/* 
++++++++++++++++++
+Custom ScroolBar
++++++++++++++++++++ */
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+
+}
+
+::webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: captialize;
+    font-family: var(--secondry-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+
+}
+
+
+h4 {
+    color: var(--secondry-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font: weight 800;
+    margin-bottom: 0.5rem;
+
+}
+
+h5 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 1px;
+
+
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+
+
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font: weight 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover {
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section-section h2,
+.book-food-text h2 {
+    color: var(--white-color);
+
+
+}
+
+
+/* Header design */
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;            
+      /* unset = agar aap kisse value ko  nhi dena chayte to unset use karte hai */
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-size: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.62rem;
+}
+
+
+/* change navbar styling on scroll */
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+
+/* top-banner Design */
+
+.top-banner {
+    width: 100%;
+    height: 700px;
+    background: url('../images/bg/bg-1.jpg') no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7.875rem 0 3.375rem;
+}
+
+
+
+/* counter design  */
+.counter-section {
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+
+}
+
+.counter-section p {
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
+
+
+
+/* about section design  */
+
+.about-section {
+    background: var(--white-color);
+}
+
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+
+
+
+/* food type section Design  */
+.food-type {
+    padding-top: 3.25rem;
+}
+
+.food-type ul li {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before {
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    /* thik ka sign isse code se aya hai   */
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+
+.story-section {
+    width: 100%;
+    height: 28.125rem;
+    background-image: url('../images/bg/bg-2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.story-section h2 {
+    color: var(--primary-color);
+}
+
+
+
+
+/* explore food section Design */
+
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+
+}
+
+.explore-food .card img {
+    border-radius: 0.9375rem;
+    object-fit: cover;
+
+}
+
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.625rem solid #eee;
+}
+
+.explore-food .card span del {
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+
+
+
+/* testimonial section Design  */
+
+.testimonial-section {
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: var(--white-color);
+    border: radius 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-caption img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+
+}
+
+.testimonial-section .carousel-item .carousel-caption p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators {
+    bottom: -2.8125rem;
+
+}
+
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+
+}
+
+.testimonial-section .carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* FAQ section Design  */
+
+.faq h4 span {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+
+}
+
+
+.book-food {
+    width: 100%;
+    background: url('../images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0
+}
+
+
+
+
+/* form control  */
+.newsletter {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid var(--text-gray);
+    color: var(--black-color);
+    font-weight: 700;
+
+}
+
+.newsletter .form-control:hover,
+.newletter .form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+
+/* footer section Design  */
+.footer {
+    background: var(--primary-color);
+}
+
+.footer .footer-link {
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+
+.footer .footer-link:hover {
+    color: var(--white-color) !important;
+}
+
+.footer a i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+
+}
+
+.expanding {
+    overflow: hidden;
+    width: 0;
+    height: 1.2em;
+    word-break: break-all;
+    animation-name: blink, expand-width;
+    animation-duration: 1s, 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes blink {
+    0% {
+        border-right: 1px solid transparent;
+    }
+
+    50% {
+        border-right: 1px solid black;
+    }
+
+    100% {
+        border-right: 1px solid transparent;
+    }
+}
+
+@keyframes expand-width {
+    0% {
+        width: 0ch;
+    }
+
+    0.975609756097561% {
+        width: 0.5ch;
+    }
+
+    1.951219512195122% {
+        width: 1ch;
+    }
+
+    2.926829268292683% {
+        width: 1.5ch;
+    }
+
+    3.902439024390244% {
+        width: 2ch;
+    }
+
+    4.878048780487805% {
+        width: 2.5ch;
+    }
+
+    5.853658536585366% {
+        width: 3ch;
+    }
+
+    6.829268292682927% {
+        width: 3.5ch;
+    }
+
+    7.804878048780488% {
+        width: 4ch;
+    }
+
+    8.78048780487805% {
+        width: 4.5ch;
+    }
+
+    9.75609756097561% {
+        width: 5ch;
+    }
+
+    10.73170731707317% {
+        width: 5.5ch;
+    }
+
+    11.707317073170731% {
+        width: 6ch;
+    }
+
+    12.682926829268293% {
+        width: 6.5ch;
+    }
+
+    13.658536585365853% {
+        width: 7ch;
+    }
+
+    14.634146341463413% {
+        width: 7.5ch;
+    }
+
+    15.609756097560975% {
+        width: 8ch;
+    }
+
+    16.585365853658537% {
+        width: 8.5ch;
+    }
+
+    17.5609756097561% {
+        width: 9ch;
+    }
+
+    18.53658536585366% {
+        width: 9.5ch;
+    }
+
+    19.512195121951223% {
+        width: 10ch;
+    }
+
+    20.487804878048784% {
+        width: 10.5ch;
+    }
+
+    21.463414634146346% {
+        width: 11ch;
+    }
+
+    22.439024390243908% {
+        width: 11.5ch;
+    }
+
+    23.41463414634147% {
+        width: 12ch;
+    }
+
+    24.390243902439032% {
+        width: 12.5ch;
+    }
+
+    25.365853658536594% {
+        width: 13ch;
+    }
+
+    26.341463414634156% {
+        width: 13.5ch;
+    }
+
+    27.317073170731717% {
+        width: 14ch;
+    }
+
+    28.29268292682928% {
+        width: 14.5ch;
+    }
+
+    29.26829268292684% {
+        width: 15ch;
+    }
+
+    30.243902439024403% {
+        width: 15.5ch;
+    }
+
+    31.219512195121965% {
+        width: 16ch;
+    }
+
+    32.19512195121953% {
+        width: 16.5ch;
+    }
+
+    33.17073170731709% {
+        width: 17ch;
+    }
+
+    34.14634146341465% {
+        width: 17.5ch;
+    }
+
+    35.12195121951221% {
+        width: 18ch;
+    }
+
+    36.097560975609774% {
+        width: 18.5ch;
+    }
+
+    37.073170731707336% {
+        width: 19ch;
+    }
+
+    38.0487804878049% {
+        width: 19.5ch;
+    }
+
+    39.02439024390246% {
+        width: 20ch;
+    }
+
+    40.00000000000002% {
+        width: 20.5ch;
+    }
+
+    40.97560975609758% {
+        width: 21ch;
+    }
+
+    41.951219512195145% {
+        width: 21.5ch;
+    }
+
+    42.92682926829271% {
+        width: 22ch;
+    }
+
+    43.90243902439027% {
+        width: 22.5ch;
+    }
+
+    44.87804878048783% {
+        width: 23ch;
+    }
+
+    45.85365853658539% {
+        width: 23.5ch;
+    }
+
+    46.829268292682954% {
+        width: 24ch;
+    }
+
+    47.804878048780516% {
+        width: 24.5ch;
+    }
+
+    48.78048780487808% {
+        width: 25ch;
+    }
+
+    49.75609756097564% {
+        width: 25.5ch;
+    }
+
+    50.7317073170732% {
+        width: 26ch;
+    }
+
+    51.70731707317076% {
+        width: 26.5ch;
+    }
+
+    52.682926829268325% {
+        width: 27ch;
+    }
+
+    53.65853658536589% {
+        width: 27.5ch;
+    }
+
+    54.63414634146345% {
+        width: 28ch;
+    }
+
+    55.60975609756101% {
+        width: 28.5ch;
+    }
+
+    56.58536585365857% {
+        width: 29ch;
+    }
+
+    57.560975609756134% {
+        width: 29.5ch;
+    }
+
+    58.536585365853696% {
+        width: 30ch;
+    }
+
+    59.51219512195126% {
+        width: 30.5ch;
+    }
+
+    60.48780487804882% {
+        width: 31ch;
+    }
+
+    61.46341463414638% {
+        width: 31.5ch;
+    }
+
+    62.439024390243944% {
+        width: 32ch;
+    }
+
+    63.414634146341506% {
+        width: 32.5ch;
+    }
+
+    64.39024390243907% {
+        width: 33ch;
+    }
+
+    65.36585365853662% {
+        width: 33.5ch;
+    }
+
+    66.34146341463419% {
+        width: 34ch;
+    }
+
+    67.31707317073175% {
+        width: 34.5ch;
+    }
+
+    68.29268292682931% {
+        width: 35ch;
+    }
+
+    69.26829268292687% {
+        width: 35.5ch;
+    }
+
+    70.24390243902444% {
+        width: 36ch;
+    }
+
+    71.219512195122% {
+        width: 36.5ch;
+    }
+
+    72.19512195121956% {
+        width: 37ch;
+    }
+
+    73.17073170731712% {
+        width: 37.5ch;
+    }
+
+    74.14634146341469% {
+        width: 38ch;
+    }
+
+    75.12195121951224% {
+        width: 38.5ch;
+    }
+
+    76.09756097560981% {
+        width: 39ch;
+    }
+
+    77.07317073170736% {
+        width: 39.5ch;
+    }
+
+    78.04878048780493% {
+        width: 40ch;
+    }
+
+    79.02439024390249% {
+        width: 40.5ch;
+    }
+
+    80.00000000000006% {
+        width: 41ch;
+    }
+
+    80.97560975609761% {
+        width: 41.5ch;
+    }
+
+    81.9512195122% {
+        width: 42ch;
+    }
+
+    100% {
+        width: 42ch;
+    }
+}
