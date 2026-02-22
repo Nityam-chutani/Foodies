@@ -1,1 +1,1 @@
-https://nityam-responsive-landing-page.netlify.app/
+https://nityam-foodies.netlify.app/
